@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "currency-exchange",
+    "slug": "currency-exchange",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
