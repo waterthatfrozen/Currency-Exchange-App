@@ -6,12 +6,13 @@ import CurrencyDropdown from "./CurrencyDropdown";
 import { styles } from "./Stylesheet";
 import ArrowDownUp from 'react-native-bootstrap-icons/icons/arrow-down-up';
 import currentRateAPI from "./currentRateAPI";
+import { SwapButton } from "./SwapButton";
 
 export function Converter() {
 
     let [fromCurrency, setFromCurrency] = useState("THB");
     let [toCurrency, setToCurrency] = useState("USD");
-    let [fromAmount, setFromAmount] = useState(0);
+    let [fromAmount, setFromAmount] = useState(0.00);
     let [toAmount, setToAmount] = useState("0.00");
     let [rate, setRate] = useState(null);
 
@@ -50,14 +51,11 @@ export function Converter() {
                   borderRadius={{topLeft: 10, topRight: 10, bottomLeft: 0, bottomRight: 0}}
                   onSelect={(selectedItem) => { handleFromCurrency(selectedItem.symbol); }} />
                 <TextInput keyboardType="numeric" style={styles.textInputBox}
-                value={fromAmount} onChangeText={handleFromAmount} />
+                  onChangeText={handleFromAmount} defaultValue={"0.00"}/>
             </View>
 
             <View style={{alignItems: 'flex-start', marginTop: 20, marginBottom: 10}}>
-              <TouchableOpacity style={{backgroundColor: '#F99820', padding: 10, borderRadius: 10}}
-              onPress={handleSwap}>
-                <Text style={{fontSize: 16}}><ArrowDownUp color={'black'}/> Swap Currency</Text>
-              </TouchableOpacity>
+              <SwapButton onPress={handleSwap}/>
             </View>
 
             <View style={{ alignItems: 'flex-start' }}>

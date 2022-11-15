@@ -10,6 +10,7 @@ import GraphUp from "react-native-bootstrap-icons/icons/graph-up";
 
 import { BottomTabBar } from './BottomTabBar.js';
 import { Converter } from './Converter';
+import { RateHistory } from './RateHistory';
 import { ExchageRateTable } from './ExchangeRateTable';
 
 const Tab = createBottomTabNavigator();
@@ -43,11 +44,11 @@ export default function App() {
             return <GraphUp fill={color} style={{marginBottom: 3}} />
           },
           tabBarBadge: 3,
-          tabBarLabel: "Graph", 
+          tabBarLabel: "History", 
           headerTintColor: '#000',
           headerShown: false,
           headerTitleStyle: { fontWeight: 'bold', fontSize: 30, paddingTop: 20 }}} 
-          component={Converter} 
+          component={RateHistory} 
         key="graph" />
       </Tab.Navigator>
       <StatusBar style="dark" />

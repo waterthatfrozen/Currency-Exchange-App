@@ -14,10 +14,11 @@ export const styles = StyleSheet.create({
     },
     chartView: {
         width: SCREEN_WIDTH,
-        height: (SCREEN_HEIGHT * 2) / 3,
         flexDirection: "column",
         justifyContent: "space-between",
         backgroundColor: "#fff",
+        paddingTop: 20,
+        marginStart: -5
     },
     tabButton: {
         flex: 1,
