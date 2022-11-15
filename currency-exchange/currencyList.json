@@ -1,32 +1,154 @@
-{ "currency": [
-    {"symbol": "THB", "name": "Thai Baht"},
-    {"symbol": "USD", "name": "US Dollar"},
-    {"symbol": "EUR", "name": "Euro"},
-    {"symbol": "GBP", "name": "British Pound Sterling"},
-    {"symbol": "JPY", "name": "Japanese Yen"},
-    {"symbol": "AUD", "name": "Australian Dollar"},
-    {"symbol": "CAD", "name": "Canadian Dollar"},
-    {"symbol": "CHF", "name": "Swiss Franc"},
-    {"symbol": "CNY", "name": "Chinese Yuan"},
-    {"symbol": "SEK", "name": "Swedish Krona"},
-    {"symbol": "NZD", "name": "New Zealand Dollar"},
-    {"symbol": "MXN", "name": "Mexican Peso"},
-    {"symbol": "SGD", "name": "Singapore Dollar"},
-    {"symbol": "HKD", "name": "Hong Kong Dollar"},
-    {"symbol": "NOK", "name": "Norwegian Krone"},
-    {"symbol": "KRW", "name": "South Korean Won"},
-    {"symbol": "INR", "name": "Indian Rupee"},
-    {"symbol": "BRL", "name": "Brazilian Real"},
-    {"symbol": "IDR", "name": "Indonesian Rupiah"},
-    {"symbol": "HUF", "name": "Hungarian Forint"},
-    {"symbol": "CZK", "name": "Czech Koruna"},
-    {"symbol": "ILS", "name": "Israeli New Sheqel"},
-    {"symbol": "CLP", "name": "Chilean Peso"},
-    {"symbol": "PHP", "name": "Philippine Peso"},
-    {"symbol": "COP", "name": "Colombian Peso"},
-    {"symbol": "MYR", "name": "Malaysian Ringgit"},
-    {"symbol": "DKK", "name": "Danish Krone"},
-    {"symbol": "ISK", "name": "Icelandic Króna"},
-    {"symbol": "VND", "name": "Vietnamese Dong"},
-    {"symbol": "LAK", "name": "Laotian Kip"}
-]}
+{
+    "currency": [
+        {
+            "flag": "🇦🇺",
+            "name": "Australian Dollar",
+            "symbol": "AUD"
+        },
+        {
+            "flag": "🇧🇷",
+            "name": "Brazilian Real",
+            "symbol": "BRL"
+        },
+        {
+            "flag": "🇨🇦",
+            "name": "Canadian Dollar",
+            "symbol": "CAD"
+        },
+        {
+            "flag": "🇨🇭",
+            "name": "Swiss Franc",
+            "symbol": "CHF"
+        },
+        {
+            "flag": "🇨🇱",
+            "name": "Chilean Peso",
+            "symbol": "CLP"
+        },
+        {
+            "flag": "🇨🇳",
+            "name": "Chinese Yuan",
+            "symbol": "CNY"
+        },
+        {
+            "flag": "🇨🇴",
+            "name": "Colombian Peso",
+            "symbol": "COP"
+        },
+        {
+            "flag": "🇨🇿",
+            "name": "Czech Koruna",
+            "symbol": "CZK"
+        },
+        {
+            "flag": "🇩🇰",
+            "name": "Danish Krone",
+            "symbol": "DKK"
+        },
+        {
+            "flag": "🇪🇺",
+            "name": "Euro",
+            "symbol": "EUR"
+        },
+        {
+            "flag": "🇬🇧",
+            "name": "British Pound Sterling",
+            "symbol": "GBP"
+        },
+        {
+            "flag": "🇭🇰",
+            "name": "Hong Kong Dollar",
+            "symbol": "HKD"
+        },
+        {
+            "flag": "🇭🇺",
+            "name": "Hungarian Forint",
+            "symbol": "HUF"
+        },
+        {
+            "flag": "🇮🇩",
+            "name": "Indonesian Rupiah",
+            "symbol": "IDR"
+        },
+        {
+            "flag": "🇮🇱",
+            "name": "Israeli New Sheqel",
+            "symbol": "ILS"
+        },
+        {
+            "flag": "🇮🇳",
+            "name": "Indian Rupee",
+            "symbol": "INR"
+        },
+        {
+            "flag": "🇮🇸",
+            "name": "Icelandic Króna",
+            "symbol": "ISK"
+        },
+        {
+            "flag": "🇯🇵",
+            "name": "Japanese Yen",
+            "symbol": "JPY"
+        },
+        {
+            "flag": "🇰🇷",
+            "name": "South Korean Won",
+            "symbol": "KRW"
+        },
+        {
+            "flag": "🇱🇦",
+            "name": "Laotian Kip",
+            "symbol": "LAK"
+        },
+        {
+            "flag": "🇲🇽",
+            "name": "Mexican Peso",
+            "symbol": "MXN"
+        },
+        {
+            "flag": "🇲🇾",
+            "name": "Malaysian Ringgit",
+            "symbol": "MYR"
+        },
+        {
+            "flag": "🇳🇴",
+            "name": "Norwegian Krone",
+            "symbol": "NOK"
+        },
+        {
+            "flag": "🇳🇿",
+            "name": "New Zealand Dollar",
+            "symbol": "NZD"
+        },
+        {
+            "flag": "🇵🇭",
+            "name": "Philippine Peso",
+            "symbol": "PHP"
+        },
+        {
+            "flag": "🇸🇪",
+            "name": "Swedish Krona",
+            "symbol": "SEK"
+        },
+        {
+            "flag": "🇸🇬",
+            "name": "Singapore Dollar",
+            "symbol": "SGD"
+        },
+        {
+            "flag": "🇹🇭",
+            "name": "Thai Baht",
+            "symbol": "THB"
+        },
+        {
+            "flag": "🇺🇸",
+            "name": "US Dollar",
+            "symbol": "USD"
+        },
+        {
+            "flag": "🇻🇳",
+            "name": "Vietnamese Dong",
+            "symbol": "VND"
+        }
+    ]
+}

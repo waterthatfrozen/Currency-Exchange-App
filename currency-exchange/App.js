@@ -1,16 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
-import React, {useState, useEffect} from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import { NavigationContainer, TabActions } from '@react-navigation/native';
+import React from 'react';
+import { StyleSheet } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import currencyList from './currencyList.json';
 
 import ArrowLeftRight from "react-native-bootstrap-icons/icons/arrow-left-right";
 import Table from "react-native-bootstrap-icons/icons/table";
 import GraphUp from "react-native-bootstrap-icons/icons/graph-up";
 
 import { BottomTabBar } from './BottomTabBar.js';
-import { CityScreen } from './CityScreen';
+import { Converter } from './Converter';
+import { ExchageRateTable } from './ExchangeRateTable';
 
 const Tab = createBottomTabNavigator();
 
@@ -26,7 +26,7 @@ export default function App() {
           tabBarLabel: "Convert", 
           headerShown: false,
           headerTintColor: '#000'}}
-          component={CityScreen} 
+          component={Converter} 
           key="converter" />
         <Tab.Screen name="Exchange Table" options={{
           tabBarIcon: ({focused, color}) => {
@@ -36,7 +36,7 @@ export default function App() {
           headerTintColor: '#000',
           headerShown: false,
           headerTitleStyle: { fontWeight: 'bold', fontSize: 30, paddingTop: 20 }}} 
-          component={CityScreen} 
+          component={ExchageRateTable} 
           key="table" />
         <Tab.Screen name="Graph" options={{
           tabBarIcon: ({focused, color}) => {
@@ -47,7 +47,7 @@ export default function App() {
           headerTintColor: '#000',
           headerShown: false,
           headerTitleStyle: { fontWeight: 'bold', fontSize: 30, paddingTop: 20 }}} 
-          component={CityScreen} 
+          component={Converter} 
         key="graph" />
       </Tab.Navigator>
       <StatusBar style="dark" />
