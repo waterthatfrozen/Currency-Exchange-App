@@ -1,64 +1,31 @@
-import React from "react";
 import { StyleSheet, Dimensions } from "react-native";
-
 let { width: SCREEN_WIDTH, height: SCREEN_HEIGHT } = Dimensions.get("window");
 
 export const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        flexDirection: "column",
-        backgroundColor: "#fff",
-        justifyContent: "space-between",
-        padding: 15,
-        paddingTop: 40,
-    },
-    chartView: {
-        width: SCREEN_WIDTH,
-        flexDirection: "column",
-        justifyContent: "space-between",
-        backgroundColor: "#fff",
-        paddingTop: 20,
-        marginStart: -5
-    },
-    tabButton: {
-        flex: 1,
-        alignItems: "center",
-        justifyContent: "center",
-        textAlign: "center",
-        padding: 15,
-    },
-    tabButtonUnfocused: {
-        flex: 1,
-        backgroundColor: "#fff",
-    },
-    tabButtonFocused: {
-        flex: 1,
-        backgroundColor: "#09264A",
-    },
-    textUnfocused: {
-        color: "#000000",
-        fontSize: 16,
-        fontWeight: "normal",
-    },
-    textFocused: {
-        color: "#ffffff",
-        fontSize: 16,
-        fontWeight: "bold",
-    },
-    textHeading: {
-        fontSize: 30,
-        fontWeight: "bold",
-        marginVertical: 10,
-    },
-    textInputBox: {
-        width: SCREEN_WIDTH * 0.9,
-        height: 50,
-        backgroundColor: "#fff",
-        borderWidth: 1,
-        borderTopWidth: 0,
-        padding: 10,
-        borderBottomLeftRadius: 10,
-        borderBottomRightRadius: 10,
-        fontSize: 24,
-    },
+    container: { flex: 1, flexDirection: "column", backgroundColor: "#FFFFFF", justifyContent: "space-between", padding: 15, paddingTop: 40, },
+    subContainer: {alignItems: 'flex-start', marginTop: 20, marginBottom: 10},
+    chartView: { width: SCREEN_WIDTH, flexDirection: "column", justifyContent: "space-between", backgroundColor: "#FFFFFF", paddingTop: 20, marginStart: -5 },
+    tabButton: { flex: 1, alignItems: "center", justifyContent: "center", textAlign: "center", padding: 15, },
+    tabButtonUnfocused: { flex: 1, backgroundColor: "#FFFFFF", },
+    tabButtonFocused: { flex: 1, backgroundColor: "#09264A", },
+    textUnfocused: { color: "#000000", fontSize: 16, fontWeight: "normal", },
+    textFocused: { color: "#FFFFFF", fontSize: 16, fontWeight: "bold", },
+    textHeading: { fontSize: 30, fontWeight: "bold", marginVertical: 10, },
+    textSubHeading: {fontSize: 22, marginVertical: 10},
+    textInputBox: { width: SCREEN_WIDTH * 0.9, height: 50, backgroundColor: "#FFFFFF", borderWidth: 1, borderTopWidth: 0, padding: 10, borderBottomLeftRadius: 10, borderBottomRightRadius: 10, fontSize: 24,},
+    swapButton: {backgroundColor: '#F99820', padding: 10, borderRadius: 10},
+    fs16: {fontSize: 16},
+    dropdownButton: {flexDirection: 'row', alignItems: 'center', paddingHorizontal: 10, paddingVertical: 5},
+    dropdownHighlightItemText: {fontSize: 18, fontWeight: 'bold'},
+    dropdownItemText: {fontSize: 16, marginLeft: 10},
+    textColorWhite: {color: '#FFFFFF'},
+    justifyContextFlexStart: {justifyContent: 'flex-start'},
+    alignItemsFlexStart: {alignItems: 'flex-start'},
+    rateTableList: { alignItems: 'flex-start', paddingBottom: 100},
+    rateTableItem: {flexDirection: 'row', alignItems: 'center', paddingHorizontal: 10, justifyContent: 'flex-start', marginVertical: 2, borderRadius: 5, borderWidth: 1},
+    rateTableItemLeft: {flex: 1, flexDirection:'column', paddingVertical: 5},
+    rateTableItemRight: {backgroundColor: '#09264A', flex: 1, padding: 5, marginLeft: 10, borderRadius: 5},
+    rateTableItemRightText: {color: '#F99820', fontSize: 20, fontWeight: 'bold', textAlign: 'right'},
+    rateTableSize: {width: SCREEN_WIDTH*0.9, height: SCREEN_HEIGHT*0.5},
+    mt5: {marginTop: 5},
 });

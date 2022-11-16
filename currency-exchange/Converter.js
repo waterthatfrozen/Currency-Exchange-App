@@ -46,7 +46,7 @@ export function Converter() {
         <SafeAreaView style={[styles.container, {justifyContent: 'center'}]}>
             <Text style={styles.textHeading}>Currency{'\n'}Converter</Text>
             <View style={{ alignItems: 'flex-start' }}>
-                <Text style={{fontSize: 22, marginVertical: 10}}>From</Text>
+                <Text style={styles.textSubHeading}>From</Text>
                 <CurrencyDropdown value={fromCurrency} defaultValueIndex={27} 
                   borderRadius={{topLeft: 10, topRight: 10, bottomLeft: 0, bottomRight: 0}}
                   onSelect={(selectedItem) => { handleFromCurrency(selectedItem.symbol); }} />
@@ -54,12 +54,12 @@ export function Converter() {
                   onChangeText={handleFromAmount} defaultValue={"0.00"}/>
             </View>
 
-            <View style={{alignItems: 'flex-start', marginTop: 20, marginBottom: 10}}>
+            <View style={styles.subContainer}>
               <SwapButton onPress={handleSwap}/>
             </View>
 
             <View style={{ alignItems: 'flex-start' }}>
-                <Text style={{fontSize: 22, marginVertical: 10}}>To</Text>
+                <Text style={styles.textSubHeading}>To</Text>
                 <CurrencyDropdown value={toCurrency} defaultValueIndex={28} 
                   borderRadius={{topLeft: 10, topRight: 10, bottomLeft: 0, bottomRight: 0}}
                   onSelect={(selectedItem) => { handleToCurrency(selectedItem.symbol); }} />

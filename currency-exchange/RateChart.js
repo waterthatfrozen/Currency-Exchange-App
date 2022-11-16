@@ -24,7 +24,6 @@ const chartConfig = {
 export function RateChart(props) {
     return (
         <View>
-            {console.log(props)}
             <LineChart
                 data={{
                 labels: props.labels,

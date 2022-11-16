@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { View, Text, SafeAreaView, TextInput, FlatList, Dimensions } from "react-native";
+import { View, Text, SafeAreaView } from "react-native";
 import Toast from "react-native-toast-message";
 import CurrencyDropdown from "./CurrencyDropdown";
 import { styles } from "./Stylesheet";
 import historyRateAPI from "./historyRateAPI";
 import { SwapButton } from "./SwapButton";
 import { RateChart } from "./RateChart";
-const { width: SCREEN_WIDTH, height: SCREEN_HEIGHT } = Dimensions.get("window");
 
 export function RateHistory() {
 
@@ -29,7 +28,6 @@ export function RateHistory() {
                 temp.push(result.rates[element][toCurrency] / result.rates[element][fromCurrency]);
             }
             setRateYAxis(temp);
-            console.log(rateYAxis); console.log(timestamp_x);
         }
         fetchRate();
     }, []);
@@ -49,27 +47,23 @@ export function RateHistory() {
     const handleSwap = () => { let temp = fromCurrency; setFromCurrency(toCurrency); setToCurrency(temp); }
 
     return (
-        <SafeAreaView style={[styles.container, {justifyContent: 'flex-start'}]}>
+        <SafeAreaView style={[styles.container, styles.justifyContextFlexStart]}>
             <Text style={styles.textHeading}>Exchange Rate{'\n'}History Chart</Text>
-            <View style={{ alignItems: 'flex-start' }}>
-                <View style={{flexDirection:'column'}}>
-                <Text style={{fontSize: 22, marginVertical: 5}}>From</Text>
-                <CurrencyDropdown value={fromCurrency} defaultValueIndex={28} style={{width: SCREEN_WIDTH * 0.4}}
-                  borderRadius={{topLeft: 10, topRight: 10, bottomLeft: 10, bottomRight: 10}}
-                  onSelect={(selectedItem) => { handleFromCurrency(selectedItem.symbol); }} />
-                </View>
-
-                <View style={{alignItems: 'flex-start', marginTop: 10, marginBottom: 5}}>
+            <View style={styles.alignItemsFlexStart}>
+                <Text style={[styles.textSubHeading, styles.mt5]}>From</Text>
+                <CurrencyDropdown value={fromCurrency} defaultValueIndex={28}
+                    borderRadius={{topLeft: 10, topRight: 10, bottomLeft: 10, bottomRight: 10}}
+                    onSelect={(selectedItem) => { handleFromCurrency(selectedItem.symbol); }} />
+                <View style={styles.subContainer}>
                     <SwapButton onPress={handleSwap}/>
                 </View>
-
-                <Text style={{fontSize: 22, marginBottom: 5}}>To</Text>
+                <Text style={[styles.textSubHeading, styles.mt5]}>To</Text>
                 <CurrencyDropdown value={toCurrency} defaultValueIndex={27} 
-                  borderRadius={{topLeft: 10, topRight: 10, bottomLeft: 10, bottomRight: 10}}
-                  onSelect={(selectedItem) => { handleToCurrency(selectedItem.symbol); }} />
+                    borderRadius={{topLeft: 10, topRight: 10, bottomLeft: 10, bottomRight: 10}}
+                    onSelect={(selectedItem) => { handleToCurrency(selectedItem.symbol); }} />
             </View>
             { (timestampXAxis === null || rateYAxis === null) ? <Text>Initializing Graph...</Text>
-            : <RateChart labels={timestampXAxis} data={rateYAxis} style={styles.chartView} /> }
+                : <RateChart labels={timestampXAxis} data={rateYAxis} style={styles.chartView} /> }
             <Toast />
         </SafeAreaView>
     );
