@@ -5,10 +5,10 @@ Digital Engineering Department, Semester 1, Academic Year 2022.
 Sirindhorn International Institute of Technology (SIIT), Thammasat University.  
 
 ## Projet Members
-- Paphana Yiwsiw [@waterthatfrozen](https://github.com/waterthatfrozen)
-- Thanakit Lerttomolsakul [@BrightHiewww](https://github.com/BrightHiewww)
-- Sirada Chaisawat [@qmuip](https://github.com/qmuip)
-- Thanyachanok Rachawongsuk [@thanyachanokr](https://github.com/thanyachanokr)
+- Paphana Yiwsiw [@waterthatfrozen](https://github.com/waterthatfrozen) (6222780379)
+- Thanakit Lerttomolsakul [@BrightHiewww](https://github.com/BrightHiewww) (6222780569)
+- Sirada Chaisawat [@qmuip](https://github.com/qmuip) (6222780668)
+- Thanyachanok Rachawongsuk [@thanyachanokr](https://github.com/thanyachanokr) (6222770313)
 
 ## API used
 - [exchangerate.host](https://exchangerate.host/#/) | Free and simple API service for getting currency exchange rate.
