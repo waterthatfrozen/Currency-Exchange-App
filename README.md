@@ -4,7 +4,7 @@ DES427 Mobile Application Development Final Project
 Digital Engineering Department, Semester 1, Academic Year 2022.  
 Sirindhorn International Institute of Technology (SIIT), Thammasat University.  
 
-## Projet Members
+## Project Members
 - Paphana Yiwsiw [@waterthatfrozen](https://github.com/waterthatfrozen) (6222780379)
 - Thanakit Lerttomolsakul [@BrightHiewww](https://github.com/BrightHiewww) (6222780569)
 - Sirada Chaisawat [@qmuip](https://github.com/qmuip) (6222780668)
