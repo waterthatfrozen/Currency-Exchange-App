@@ -51,7 +51,7 @@ export function Converter() {
                   borderRadius={{topLeft: 10, topRight: 10, bottomLeft: 0, bottomRight: 0}}
                   onSelect={(selectedItem) => { handleFromCurrency(selectedItem.symbol); }} />
                 <TextInput keyboardType="numeric" style={styles.textInputBox}
-                  onChangeText={handleFromAmount} defaultValue={"0.00"}/>
+                  onChangeText={handleFromAmount} value={fromAmount} />
             </View>
 
             <View style={styles.subContainer}>
