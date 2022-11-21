@@ -10,8 +10,11 @@ Sirindhorn International Institute of Technology (SIIT), Thammasat University.
 - Sirada Chaisawat [@qmuip](https://github.com/qmuip) (6222780668)
 - Thanyachanok Rachawongsuk [@thanyachanokr](https://github.com/thanyachanokr) (6222770313)
 
+## In-class presentation file
+https://www.canva.com/design/DAFSRHbhz6E/UL7X_Dh0ojlwnmNK8mP4xw/view?utm_content=DAFSRHbhz6E&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
+
 ## API used
-- [exchangerate.host](https://exchangerate.host/#/) | Free and simple API service for getting currency exchange rate.
+- [exchangerate.host](https://exchangerate.host/#/) | Free and simple API service for getting currency exchange rate with no API key required.
 API documentation: https://exchangerate.host/#/#docs
 
 ## Installation Instruction
@@ -26,6 +29,9 @@ https://www.figma.com/file/kwzAfHyCm86OCR9FEBHkuz/Currency-Converter?node-id=0%3
 
 ## Screenshot
 <img src="https://github.com/waterthatfrozen/Currency-Exchange-App/blob/62d35a4b5dc09e5a918a944aa08398b6ebe070ef/currency-exchange/screenshot/Converter.jpg" width="300" alt="Converter Screen"/> <img src="https://github.com/waterthatfrozen/Currency-Exchange-App/blob/62d35a4b5dc09e5a918a944aa08398b6ebe070ef/currency-exchange/screenshot/History-Graph.jpg" width="300" alt="History Graph Screen"/> <img src="https://github.com/waterthatfrozen/Currency-Exchange-App/blob/62d35a4b5dc09e5a918a944aa08398b6ebe070ef/currency-exchange/screenshot/Rate-Table.jpg" width="300" alt="Exchange Rate Table Screen"/>
+
+## Video Demo
+https://drive.google.com/file/d/1bSO6jMZ9XTF7wZL9Xf4ulTLGooBtbqzk/view?usp=sharing
 
 ## Notable Library
 - [react-native-select-dropdown](https://www.npmjs.com/package/react-native-select-dropdown) for creating a customizable dropdown selection
